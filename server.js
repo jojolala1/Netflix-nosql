@@ -27,4 +27,22 @@ app.get('/movies', async (res, res) => {
     }
 })
 
+app.get('/directors', async (res, res) => {
+    try {
+        const directorsArray = await myNetflixDb.collection('directors').find({}).toArray();
+        res.json(directorsArray);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+})
+
+app.get('/reviews', async (res, res) => {
+    try {
+        const reviewsArray = await myNetflixDb.collection('reviews').find({}).toArray();
+        res.json(reviewsArray);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+})
+
 startServer().catch(err => console.error('startServer error:', err));
