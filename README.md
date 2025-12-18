@@ -12,6 +12,8 @@ Le but de cet exercice est de gérer une collection de films. MongoDB sera utili
 
 ## Tâches
 
+test
+
 ### 1. Initialiser un projet Express + MongoDB
 
 - Mets en place les fichiers de base d'un projet Express (`package.json`, `index.js`, dépendances...).
