@@ -26,3 +26,5 @@ app.get('/movies', async (res, res) => {
         res.status(500).json({ error: error.message });
     }
 })
+
+startServer().catch(err => console.error('startServer error:', err));
