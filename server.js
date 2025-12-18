@@ -18,7 +18,7 @@ async function startServer() {
     })
 }
 
-app.get('/allcontent', async (requestAnimationFrame, res) => {
+app.get('/movies', async (requestAnimationFrame, res) => {
     try {
         const filmsArray = await myNetflixDb.collection('movies').find({}).toArray();
         res.json(filmsArray);
