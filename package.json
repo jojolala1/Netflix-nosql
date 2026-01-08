@@ -1,0 +1,20 @@
+{
+  "name": "nosql-tpj1",
+  "version": "1.0.0",
+  "description": "TP NoSQL - Plateforme de streaming avec MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "seed": "node seed.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^6.3.0",
+    "@faker-js/faker": "^8.3.1",
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  }
+}
